@@ -1,0 +1,25 @@
+version: '3.3'
+services:
+  web:
+    build:
+      context: ./shehacksIV
+      dockerfile: Dockerfile
+    container_name: shehacksIV-php
+    depends_on:
+      - db
+    volumes:
+      - ./shehacksIV:/var/www/html/
+    ports:
+      - 4040:80
+  db:
+    container_name: shehacksIV-mysql
+    image: mysql:8.0
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: shehacksIV
+      MYSQL_DATBASE: test_db
+      MYSQL_USER: alylicious99
+      MYSQL_PASSWORD: shehacksIV
+    ports:
+      - 6033:3306
