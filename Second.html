@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <title>Home</title>
+    <style type="text/css">
+#banner {
+  z-index: -1;
+}
+img {
+  width: 20vw;
+  height: 20vw;
+  padding: 2vw;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+img:active {
+  opacity:0.4;
+  cursor: pointer;
+}
+
+input[type=checkbox]:checked + label > img {
+  border: 10px solid rgb(113, 138, 144);
+}
+        
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+        
+td {
+    width: 50%;
+    height: 2em;
+    border: 1px solid #ccc;
+}
+
+</style></head>
+  <body>
+    <div>
+      <div id="wrapper" style="width:100%; overflow:hidden; "><img style="width: 100%; height: 20%"
+          src="images/main_graphics/banner.png"
+          alt="banner"
+          title="banner">
+      </div>
+    </div>
+    <p style="font-family: Open Sans; color: #818080; font-size: 40px; text-align: left;">Which subcategories would you like     to focus on?</p>
+    
+    <div class="container">
+       <div class="row">
+           <div class="col-6">
+                <img src="images/subcategories/Environment.png" style="width: 90%; height: 50%">
+            </div>
+            <div class="col-6">
+                <img style="width: 90%; height: 30%" src="images/subcategories/Women's Rights.png">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <input name="en" id="en-1" value="1"
+                type="checkbox"><label for="en-1"> <img src="images/subcategories/OceanConservation.png"
+                alt="Ocean Conservation"
+                title="Ocean Conservation"
+                style="width: 90%; height: 20%;">
+                </label>
+            </div>
+             <div class="col-6">
+                <input name="wr" id="wr-1" value="1"
+                type="checkbox"><label for="wr-1"> <img src="images/subcategories/WomensHealth.png"
+                alt="Women's Health"
+                title="Women's Health"
+                style="width: 90%; height: 20%;">
+                </label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <input name="en" id="en-2" value="2"
+                type="checkbox"><label for="en-2"> <img src="images/subcategories/EnvironmentalPollution.png"
+                alt="Environmental Pollution"
+                title="Environmental Pollution"
+                style="width: 90%; height: 20%;">
+                </label>
+            </div>
+             <div class="col-6">
+                <input name="wr" id="wr-2" value="2"
+                type="checkbox"><label for="wr-2"> <img src="images/subcategories/WomensEducation.png"
+                alt="Women's Education"
+                title="Women's Education"
+                style="width: 90%; height: 20%;">
+                </label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <input name="en" id="en-3" value="3"
+                type="checkbox"><label for="en-3"> <img src="images/subcategories/ParksAndNature.png"
+                alt="Parks and Nature"
+                title="Parks and Nature"
+                style="width: 90%; height: 20%;">
+                </label>
+            </div>
+             <div class="col-6">
+                <input name="wr" id="wr-3" value="3"
+                type="checkbox"><label for="wr-3"> <img src="images/subcategories/ViolencePrevention.png"
+                alt="Violence Prevention"
+                title="Violence Prevention"
+                style="width: 90%; height: 20%;">
+                </label>
+            </div>
+        </div>
+    </div>
+   
+      <form action="Third.html">
+    <input type="submit" value="Submit">
+      </form>
+  </body>
+</html>
