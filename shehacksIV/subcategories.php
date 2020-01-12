@@ -68,7 +68,7 @@ td {
 	<br>
     <h2 style="font-family: Open Sans; color: #818080; font-size: 40px; text-align: left; padding-left: 50px;">Which subcategories would you like to focus on?</h1>
 	<br>
-	<form action="test.php" method="post">
+	<form action="data.php" method="post">
 	<input type="checkbox" id="myCheckbox1" />
 	<div class="container">
 		<div class="row">
