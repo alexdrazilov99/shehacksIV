@@ -7,7 +7,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <title>Home</title>
     <style type="text/css">
 #banner {
@@ -65,11 +65,12 @@ input[type=checkbox]:checked + label > img {
             <p style="font-family: Open Sans; color: #818080; font-size: 25px; text-align: left; line-height: 10px;"><br>
             </p>
 
+	<form action="subcategories.php" method="post">
 	<input type="checkbox" id="myCheckbox1" />
         <?php include 'getcategories.php'; ?>
 	</input>
+	<div style="text-align: right; padding-right: 20px;"><input type="image" name="submit" src="img/page-graphics/next.png" alt="Next Page" style="width: 15%; height: 15%;"></div>
+	</form>
 
-       <div style="text-align: right;"><img src="img/page-graphics/next.png" alt="Next Page" title="Next Page"
-    style="width: 20%; height: 20%;"></div>
   </body>
 </html>

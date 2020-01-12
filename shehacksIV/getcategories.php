@@ -11,17 +11,17 @@ if ($result = mysqli_query($connection,$query)) {
 
 echo '<div class="container">';
 echo '<div class="row">';
-//echo '<div class="col-12">';
 
 while($row = mysqli_fetch_row($result)){
 
 	echo '<div class="col">';
-		echo '<input name="choice" id="';
-		echo $row[0].'" value="" type="checkbox"/>';
+		echo '<input name="categories[]" id="';
+		echo $row[0].'" value="';
+		echo $row[0]. '" type="checkbox"/>';
 		echo '<label for="';
 		echo $row[0] .'">';
 		echo "<img src='img/category/";
-		echo $row[1]."' alt='".$row[0]."' title='".$row[0]."' style='width: 274px; height: 186px;'>";
+		echo $row[1]."' alt='".$row[0]."' title='".$row[0]."' style='width: 324px; height: 236px;'>";
 		echo '</label>';
 	echo '</div>';
 }
